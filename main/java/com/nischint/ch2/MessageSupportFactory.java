@@ -20,7 +20,7 @@ public class MessageSupportFactory {
 	        System.out.println("Current dir using System:" +currentDir);
 	        */
 			props.load(new FileInputStream(
-					"msf.properties"));
+					"src/main/java/com/nischint/ch2/msf.properties"));
 			renderer = (MessageRenderer) Class.forName(
 					props.getProperty("renderer.class")).newInstance();
 			provider = (MessageProvider) Class.forName(
